@@ -19,7 +19,7 @@ public class HttpServer {
 
          LOGGER.info("Server running on port " + 8080 + "...");
          LOGGER.info("Waiting for client ...");
-         ServerListenerThread serverListenerThread = null;
+         ServerListenerThread serverListenerThread;
          try {
              serverListenerThread = new ServerListenerThread(8080, "/root");
              serverListenerThread.start();
